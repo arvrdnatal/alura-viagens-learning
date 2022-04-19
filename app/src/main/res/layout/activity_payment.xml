@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PaymentActivity">
+
+    <TextView
+        android:id="@+id/info_text_payment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/texto_informacao_pagamento"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/price_text_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/valor_da_compra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_text_payment" />
+
+    <TextView
+        android:id="@+id/price_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/price_text_payment"
+        app:layout_constraintTop_toBottomOf="@+id/price_text_payment"
+        tools:text="R$ 421,50" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_card_number_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/price_payment"
+        app:layout_constraintTop_toBottomOf="@+id/price_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/card_number_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero_do_cartao"
+            android:inputType="number"
+            android:maxLength="12"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_card_month_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="@+id/layout_card_number_payment"
+        app:layout_constraintTop_toTopOf="@id/layout_card_code_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/card_month_payment"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/mm"
+            android:inputType="number"
+            android:maxLength="2"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_card_year_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_card_month_payment"
+        app:layout_constraintStart_toEndOf="@+id/layout_card_month_payment"
+        app:layout_constraintTop_toTopOf="@+id/layout_card_month_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/card_year_payment"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/aa"
+            android:inputType="number"
+            android:maxLength="2"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_card_code_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_card_month_payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/layout_card_year_payment"
+        app:layout_constraintTop_toBottomOf="@id/layout_card_number_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/card_code_payment"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_cvc_cartao_de_credito"
+            android:drawablePadding="8dp"
+            android:hint="@string/cvc"
+            android:inputType="number"
+            android:maxLength="3"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_card_name_payment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/layout_card_code_payment"
+        app:layout_constraintStart_toStartOf="@id/layout_card_month_payment"
+        app:layout_constraintTop_toBottomOf="@id/layout_card_code_payment">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/card_name_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZÇ "
+            android:hint="@string/nome_no_cartao"
+            android:inputType="textCapCharacters"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_finish_payment"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/finalizar_compra"
+        app:layout_constraintEnd_toEndOf="@id/layout_card_name_payment"
+        app:layout_constraintStart_toStartOf="@id/layout_card_name_payment"
+        app:layout_constraintTop_toBottomOf="@id/layout_card_name_payment"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

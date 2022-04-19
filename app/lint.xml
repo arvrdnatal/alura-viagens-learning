@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="UnusedResources">
+        <ignore path="src/main/res/drawable-hdpi/belo_horizonte_mg.jpg" />
+        <ignore path="src/main/res/drawable-hdpi/foz_do_iguacu_pr.jpg" />
+        <ignore path="src/main/res/drawable-hdpi/recife_pe.jpg" />
+        <ignore path="src/main/res/drawable-hdpi/rio_de_janeiro_rj.jpg" />
+        <ignore path="src/main/res/drawable-hdpi/salvador_ba.jpg" />
+        <ignore path="src/main/res/drawable-hdpi/sao_paulo_sp.jpg" />
+        <ignore path="src/main/res/drawable-ldpi/belo_horizonte_mg.jpg" />
+        <ignore path="src/main/res/drawable-ldpi/foz_do_iguacu_pr.jpg" />
+        <ignore path="src/main/res/drawable-ldpi/recife_pe.jpg" />
+        <ignore path="src/main/res/drawable-ldpi/rio_de_janeiro_rj.jpg" />
+        <ignore path="src/main/res/drawable-ldpi/salvador_ba.jpg" />
+        <ignore path="src/main/res/drawable-ldpi/sao_paulo_sp.jpg" />
+        <ignore path="src/main/res/drawable-mdpi/belo_horizonte_mg.jpg" />
+        <ignore path="src/main/res/drawable-mdpi/foz_do_iguacu_pr.jpg" />
+        <ignore path="src/main/res/drawable-mdpi/recife_pe.jpg" />
+        <ignore path="src/main/res/drawable-mdpi/rio_de_janeiro_rj.jpg" />
+        <ignore path="src/main/res/drawable-mdpi/salvador_ba.jpg" />
+        <ignore path="src/main/res/drawable-mdpi/sao_paulo_sp.jpg" />
+        <ignore path="src/main/res/drawable-xhdpi/belo_horizonte_mg.jpg" />
+        <ignore path="src/main/res/drawable-xhdpi/foz_do_iguacu_pr.jpg" />
+        <ignore path="src/main/res/drawable-xhdpi/recife_pe.jpg" />
+        <ignore path="src/main/res/drawable-xhdpi/rio_de_janeiro_rj.jpg" />
+        <ignore path="src/main/res/drawable-xhdpi/salvador_ba.jpg" />
+        <ignore path="src/main/res/drawable-xhdpi/sao_paulo_sp.jpg" />
+        <ignore path="src/main/res/drawable-xxhdpi/belo_horizonte_mg.jpg" />
+        <ignore path="src/main/res/drawable-xxhdpi/foz_do_iguacu_pr.jpg" />
+        <ignore path="src/main/res/drawable-xxhdpi/recife_pe.jpg" />
+        <ignore path="src/main/res/drawable-xxhdpi/rio_de_janeiro_rj.jpg" />
+        <ignore path="src/main/res/drawable-xxhdpi/salvador_ba.jpg" />
+        <ignore path="src/main/res/drawable-xxhdpi/sao_paulo_sp.jpg" />
+        <ignore path="src/main/res/drawable-xxxhdpi/belo_horizonte_mg.jpg" />
+        <ignore path="src/main/res/drawable-xxxhdpi/foz_do_iguacu_pr.jpg" />
+        <ignore path="src/main/res/drawable-xxxhdpi/recife_pe.jpg" />
+        <ignore path="src/main/res/drawable-xxxhdpi/rio_de_janeiro_rj.jpg" />
+        <ignore path="src/main/res/drawable-xxxhdpi/salvador_ba.jpg" />
+        <ignore path="src/main/res/drawable-xxxhdpi/sao_paulo_sp.jpg" />
+    </issue>
+</lint>

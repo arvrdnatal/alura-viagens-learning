@@ -1,0 +1,6 @@
+{
+  "image" : "@drawable/sao_paulo_sp",
+  "place" : "@string/cidade",
+  "days" : "@string/x_dias",
+  "price" : "@string/xxx_preco"
+}

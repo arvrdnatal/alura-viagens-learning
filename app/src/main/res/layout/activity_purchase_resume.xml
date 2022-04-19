@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PurchaseResumeActivity">
+
+    <ImageView
+        android:id="@+id/image_view_header_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/parabenizacao"
+        android:src="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/congratulations_text_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/parabens"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/congratulations_text_purchase"
+        app:layout_constraintEnd_toEndOf="@id/image_view_header_purchase"
+        app:layout_constraintStart_toStartOf="@+id/image_view_header_purchase"
+        app:layout_constraintTop_toTopOf="@+id/image_view_header_purchase"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/done_text_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compra_realizada_com_sucesso"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/image_view_header_purchase"
+        app:layout_constraintEnd_toEndOf="@id/congratulations_text_purchase"
+        app:layout_constraintStart_toStartOf="@id/congratulations_text_purchase"
+        app:layout_constraintTop_toBottomOf="@id/congratulations_text_purchase"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/review_text_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/confira_o_resumo_da_compra"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_header_purchase" />
+
+    <ImageView
+        android:id="@+id/image_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/imagem_do_local"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/review_text_purchase"
+        tools:src="@drawable/sao_paulo_sp" />
+
+    <TextView
+        android:id="@+id/local_name_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_purchase"
+        tools:text="São Paulo" />
+
+    <TextView
+        android:id="@+id/date_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/local_name_purchase"
+        app:layout_constraintTop_toBottomOf="@id/local_name_purchase"
+        tools:text="08/12 - 10/12 de 2017" />
+
+    <TextView
+        android:id="@+id/price_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/date_purchase"
+        app:layout_constraintTop_toBottomOf="@id/date_purchase"
+        tools:text="R$ 243,99" />
+</androidx.constraintlayout.widget.ConstraintLayout>
